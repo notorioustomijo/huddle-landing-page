@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans- serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Typography Styles*/
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #fff;
+
+}
+
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #fff;
+}
+
+/* ====MAIN COMPONENT STYLES==== */
+body {
+    background: url(images/bg-desktop.svg) hsl(257, 40%, 49%);
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    width: 88%;
+    height: 60%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.logo-section {
+    width: 65%;
+    height: 55%;
+    margin-bottom: 48px;
+}
+
+.logo-section img {
+    object-fit: contain;
+    width: 25%;
+    height: 55%;
+
+}
+
+/* ===CONTENT BOX === STYLES */
+.content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-section img {
+    width: 50%;
+}
+
+.main-content {
+    width: 45%;
+}
+
+.main-content h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 4rem;
+}
+
+.main-content p {
+    margin-top: 1rem;
+    width: 85%;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-content button {
+    padding: 1rem 3.5rem;
+    border-radius: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 64px;
+}
+
+/* ====MEDIA QUERIES FOR MOBILE BREAKPOINT=== */
+
+@media screen and (max-width: 600px) {
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .main-content {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main-content h1 {
+        width: 100%;
+    }
+
+    .main-content p {
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
